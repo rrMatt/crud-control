@@ -1,0 +1,10 @@
+.btn {
+    cursor: pointer;
+}
+
+.required.b-form-group .col-form-legend span::after {
+    content: '*';
+    position: absolute;
+    padding:0 5px;
+    color: $danger;
+}
