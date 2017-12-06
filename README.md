@@ -1,4 +1,4 @@
-# test-bootstrap
+# crud-control
 
 > A Vue.js project for testing Bootstrap-Vue and creating a generic crud control component.
 
@@ -11,7 +11,8 @@ The following dependancies have been used:
 * Bootstrap-Vue - for basic UI components based on Bootstrap 4
 * Vuelidate - for validation
 * Vue-Types - for extra prop type definition
-
+* Uses Sass 
+* Basic setup generated from vue-cli
 
 ## Build Setup
 
