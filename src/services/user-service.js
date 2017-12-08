@@ -15,7 +15,7 @@ export function getUsers(searchTerms = {}){
 
         const terms = {
             pageSize: searchTerms.pageSize || 10,
-            pageNumber: searchTerms.pageNum || 1,
+            pageNumber: searchTerms.pageNumber || 1,
             filter: (searchTerms.filter || '').toLocaleLowerCase(),
         };
         const skip = (terms.pageNumber - 1) * terms.pageSize;
