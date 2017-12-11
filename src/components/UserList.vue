@@ -37,15 +37,14 @@ import { actions } from '../store/usersList'
 
 export default {
   name: 'UsersList',
-  data: function(){
-    return {
-      usersTransform: {
+  created: function(){
+    // treats these as constants (i.e. not reactive)
+    this.userForm = UserForm;
+    this.usersTransform = {
         'Full Name': x => `${x.firstName} ${x.lastName}`,
         email: x => x.email,
         gender: x => x.gender == 'male' ? 'Male' : 'Female'
-      },
-      userForm: UserForm,
-    }
+      }
   },
   computed:{
     ...mapState(usersNamespace, {
