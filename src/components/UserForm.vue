@@ -87,14 +87,6 @@ export default {
             formProp.$touch();
             this.$emit('input', updates);
         },
-        checkValidation(){
-            const { firstName, lastName, email, gender } = this;
-            const isEmpty = v => !v && !v.trim();
-            const isValid = !isEmpty(firstName) && !isEmpty(lastName)
-                && !isEmpty(gender)
-                && !isEmpty(email) && email.indexOf("@") > -1;
-            this.$emit('valid', isValid);
-        },
         isSuccess(v){
             if(v.$dirty){
                 return v.$invalid ? false : null;
